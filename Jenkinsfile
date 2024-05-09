@@ -10,13 +10,13 @@ pipeline {
         git 'https://github.com/saadriaz999/DevOps.git'
       }
     }
-    stage('Build image') {
-      steps{
-        script {
-          dockerImage = docker.build dockerimagename
-        }
-      }
-    }
+//     stage('Build image') {
+//       steps{
+//         script {
+//           dockerImage = docker.build dockerimagename
+//         }
+//       }
+//     }
 //     stage('Pushing Image') {
 //       environment {
 //           registryCredential = 'dockerhub-credentials'
