@@ -24,6 +24,9 @@ pipeline {
       steps{
         script {
             sh 'unset DOCKER_HOST'
+            echo "CI_REGISTRY: ${env.CI_REGISTRY}"
+            echo "CI_REGISTRY_USER: ${env.CI_REGISTRY_USER}"
+            echo "CI_REGISTRY_PASSWORD: ${env.CI_REGISTRY_PASSWORD}"
 
 //             // Login to Docker registry
 //             sh "docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD"
