@@ -31,7 +31,8 @@ def search():
 
     # prompt = QuestionAnswerUtils.rag(user_input, COLLECTION_NAME, top_k=TOP_K_RESULTS_FROM_EMBEDDING_SEARCH)
     # return render_template('search.html')
-    return user_input
+    # return user_input
+    return 'response: ' + str(user_input)
 
 
 if __name__ == '__main__':
