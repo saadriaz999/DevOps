@@ -23,6 +23,11 @@ pipeline {
            }
       steps{
         script {
+            sh 'unset DOCKER_HOST'
+
+//             // Login to Docker registry
+//             sh "docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD"
+
           docker.withRegistry( 'https://registry.hub.docker.com', registryCredential ) {
             dockerImage.push("latest")
           }
