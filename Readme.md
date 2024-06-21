@@ -1,5 +1,6 @@
 # Rag Based Medical Question Answer Dataset
 
+Retrieval Augmented Generation (RAG) Medical Chatbot in Python that uses PubMed dataset as the knowledge source
 
 ## Create a virtual environment
 
